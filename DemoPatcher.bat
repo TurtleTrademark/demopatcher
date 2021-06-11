@@ -27,7 +27,9 @@ CHOICE /C "UPJ" /M "What Demo Disk Version would you like? (U = USA Demo 1 | P =
 
 If %errorlevel% == 1 (XCOPY /E/I/Y "dp\&&systemdataUS"       "root\&&systemdata"
 XCOPY /E/I/Y "dp\openingUS.bnr" 		"root\opening.bnr" 
-XCOPY /E/I/Y "dp\pikmin2UP.map" 		"root\pikmin2UP.map")
+XCOPY /E/I/Y "dp\pikmin2UP.map" 		"root\pikmin2UP.map
+XCOPY /E/I/Y "dp\thpUS"                  "root\thp"
+XCOPY /E/I/Y "dp\titleUS.szs"             "root\user\Ebisawa\title\title.szs")
 
 If %errorlevel% == 2 (XCOPY /E/I/Y "dp\&&systemdataPAL"       "root\&&systemdata"
 XCOPY /E/I/Y "dp\openingPAL.bnr" 		"root\opening.bnr"
